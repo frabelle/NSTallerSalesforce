@@ -1,0 +1,105 @@
+/* Center the form */
+body {
+  background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height of the body to 100% of the viewport height */
+}
+
+form {
+  max-width: 400px; /* Adjust the max-width as needed */
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the input and select elements */
+input,
+select {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Center the submit button */
+input[type="submit"] {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Center the textarea */
+textarea {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+/* Style labels */
+label {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style inputs */
+input,
+select,
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Style submit button */
+input[type="submit"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style required input elements */
+input:required + label::after {
+  content: " *";
+  color: red;
+}

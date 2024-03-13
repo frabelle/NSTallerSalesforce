@@ -1,0 +1,55 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Agregue el siguiente elemento <META> a su página <HEAD>.  Si es   -->
+<!--  preciso, modifique el parámetro charset para especificar el conjunto    -->
+<!--  de caracteres de su página HTML.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+</head>
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTA: Agregue el siguiente elemento <FORM> a su página.                 -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <form action="" method="POST">
+    
+    <input type=hidden name="oid" value="">
+    <input type=hidden name="retURL" value="">
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTA: Estos campos son elementos de depuración opcionales. Elimine      -->
+    <!--  los comentarios de estas líneas si desea realizar una prueba en el      -->
+    <!--  modo de depuración.                                                     -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="">                                 -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <label for="first_name">Nombre</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
+    
+    <label for="last_name">Apellidos</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br>
+    
+    <label for="email">Correo electrónico</label><input  id="email"  maxlength="80" name="email" size="20" type="text" required/><br>
+    
+    <label for="company">Compañía</label><input  id="company" maxlength="40" name="company" size="20" type="text" required/><br>
+    
+    <label for="title">Cargo</label><input  id="title" maxlength="40" name="title" size="20" type="text" required/><br>
+    
+    <label for="phone">Teléfono</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required/><br>
+    
+    <label for="lead_source" hidden>Origen del candidato</label>
+      <select  id="lead_source" name="lead_source" hidden>
+        <option value="Web" selected>Web</option>
+        <option value="Phone Inquiry">Phone Inquiry</option>
+        <option value="Partner Referral">Partner Referral</option>
+        <option value="Purchased List">Purchased List</option>
+        <option value="Other">Other</option>
+      </select><br>
+    
+    <label for="description">Descripción</label><textarea name="description" required></textarea><br>
+    
+    <input type="submit" name="submit">
+    
+    </form>
